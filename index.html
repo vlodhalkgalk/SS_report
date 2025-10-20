@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Итоги стратегической сессии фонда</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #1a0033 50%, #330066 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(102, 0, 204, 0.3);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 80px;
+            padding-bottom: 40px;
+            border-bottom: 3px solid #6600cc;
+        }
+        
+        .logo {
+            width: 200px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .section {
+            margin-bottom: 60px;
+            background: rgba(102, 0, 204, 0.15);
+            border-left: 6px solid #6600cc;
+            padding: 40px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .section:hover {
+            background: rgba(102, 0, 204, 0.25);
+            transform: translateX(5px);
+        }
+        
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #bb99ff;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        
+        .task {
+            margin-bottom: 35px;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            border: 1px solid rgba(187, 153, 255, 0.2);
+        }
+        
+        .task:last-child {
+            margin-bottom: 0;
+        }
+        
+        .task-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .task-name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .task-deadline {
+            font-size: 18px;
+            font-weight: 500;
+            color: #bb99ff;
+            background: rgba(102, 0, 204, 0.3);
+            padding: 8px 20px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+        
+        .task-description {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #e6e6e6;
+        }
+        
+        .task-list {
+            margin-top: 15px;
+        }
+        
+        .task-item {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .task-item:before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #bb99ff;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 32px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .task-name {
+                font-size: 20px;
+            }
+            
+            .task-deadline {
+                font-size: 16px;
+            }
+            
+            .task-description {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://raw.githubusercontent.com/vlodhalkgalk/SD_photo/refs/heads/main/%D0%BB%D0%BE%D0%B3%D0%BE%202.png" alt="Логотип фонда" class="logo">
+            <h1>Итоги стратегической сессии фонда</h1>
+        </header>
+
+        <div class="section">
+            <div class="section-title">01. Инвестиционная витрина</div>
+            
+            <div class="task">
+                <div class="task-header">
+                    <div class="task-name">Портфель</div>
+                    <div class="task-deadline">Ноябрь 2025</div>
+                </div>
+                <div class="task-description">
+                    Подготовить для инвесторов оцифрованный отчет по портфельным компаниям, зафиксировать дату ежеквартального отчета
+                </div>
+            </div>
+
+            <div class="task">
+                <div class="task-header">
+                    <div class="task-name">Наполнение</div>
+                    <div class="task-deadline">Февраль 2026</div>
+                </div>
+                <div class="task-description">
+                    Презентовать инвестиционную стратегию фонда 2026
+                </div>
+            </div>
+
+            <div class="task">
+                <div class="task-header">
+                    <div class="task-name">Менеджмент</div>
+                    <div class="task-deadline">Ноябрь 2025 – Январь 2026</div>
+                </div>
+                <div class="task-description">
+                    <div class="task-list">
+                        <div class="task-item">Сформировать Совет ИК, выделить лидеров по вертикалям/профилю из числа ЧФ, описать механику работы Совета <span style="color: #bb99ff;">(Ноябрь 2025)</span></div>
+                        <div class="task-item">Разработать рейтинг синдикаторов на основании отчета по портфельным компаниям <span style="color: #bb99ff;">(Ноябрь 2025)</span></div>
+                        <div class="task-item">«Школа синдикатора» – подготовить обучающие материалы для синдикатора, стандартизировать критерии и обязанности <span style="color: #bb99ff;">(Январь 2026)</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">02. PDP</div>
+            
+            <div class="task">
+                <div class="task-header">
+                    <div class="task-name">Менеджмент</div>
+                    <div class="task-deadline">4 квартал 2025</div>
+                </div>
+                <div class="task-description">
+                    Разработать SLA
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">03. Комьюнити</div>
+            
+            <div class="task">
+                <div class="task-header">
+                    <div class="task-name">Календарь событий</div>
+                    <div class="task-deadline">Декабрь 2025</div>
+                </div>
+                <div class="task-description">
+                    Представить ивент-календарь ЧФ
+                </div>
+            </div>
+
+            <div class="task">
+                <div class="task-header">
+                    <div class="task-name">Ивент</div>
+                    <div class="task-deadline">Ноябрь 2025</div>
+                </div>
+                <div class="task-description">
+                    <div class="task-list">
+                        <div class="task-item">План-календарь досуговых встреч ЧФ до конца года</div>
+                        <div class="task-item">Выделить лидеров по направлениям (баня/падл/покер/др.)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task">
+                <div class="task-header">
+                    <div class="task-name">Нетворкинг</div>
+                    <div class="task-deadline">Ноябрь 2025</div>
+                </div>
+                <div class="task-description">
+                    <div class="task-list">
+                        <div class="task-item">Подготовить общий профайл членов фонда, разместить в чате Dome Foundation_Резиденты</div>
+                        <div class="task-item">Обновлять профайл участников для деловых событий фонда</div>
+                        <div class="task-item">Систематизировать ТГ каналы и чаты</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
